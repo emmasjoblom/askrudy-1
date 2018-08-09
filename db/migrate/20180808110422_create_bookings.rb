@@ -6,9 +6,8 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.references :service, foreign_key: true
       t.datetime :start_datetime
       t.datetime :end_datetime
-      t.integer :price
       t.string :status
-      t.text :details
+      t.string :details
 
       t.timestamps
     end
